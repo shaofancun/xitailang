@@ -16,3 +16,14 @@ $(".about_left a").click(function(){
 	$(".about_right_box").fadeOut(300);
 	$('#'+tabId+'').fadeIn(300);
 })
+//显示隐藏下载框
+$("#downShow").click(function(){
+	$(this).parent().addClass("down");
+	$(".mark").fadeIn(300);
+	$(".down_box").fadeIn(300);
+})
+$(".mark").click(function(){
+	$(".mark").fadeOut(300);
+	$(".down_box").fadeOut(300);
+	$("#downShow").removeClass("down");
+})
